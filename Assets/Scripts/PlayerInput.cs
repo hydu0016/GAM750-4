@@ -30,8 +30,7 @@ public class PlayerInput : MonoBehaviour
 
     private void UpdatePlayerInput()
     {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerButtonValue) &&
-            triggerButtonValue > 0)
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerButtonValue) && triggerButtonValue > 0)
         {
 
         }

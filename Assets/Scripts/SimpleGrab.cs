@@ -30,6 +30,7 @@ public class SimpleGrab : MonoBehaviour
     {
         if (cube == null)
         {
+            Debug.Log("Grabbing");
             var grabbableCheck = other.GetComponent<Grabbable>();
             if (grabbableCheck != null)
             {

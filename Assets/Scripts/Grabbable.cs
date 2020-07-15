@@ -1,4 +1,5 @@
-﻿using Normal.Realtime;
+﻿using System;
+using Normal.Realtime;
 using UnityEngine;
 
 public class Grabbable : MonoBehaviour
@@ -18,6 +19,7 @@ public class Grabbable : MonoBehaviour
     {
         if (Grabbed)
         {
+            Debug.Log("Grabbed");
             _realtimeTransform.RequestOwnership();
         }
     }
